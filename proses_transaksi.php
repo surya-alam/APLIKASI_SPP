@@ -5,7 +5,7 @@ if(isset($_GET['act'])) {
     if($_GET['act']=='bayar'){
         $idspp = $_GET['id'];
         $nisn = $_GET['nisn'];
-        $tglbayar = date['Y-m-d'];
+        $tglbayar = date('Y-m-d');
         //nomor bayar di generate berdasarkan waktu pembayaran
         $nobayar = date('dmYHisis');
         /*
