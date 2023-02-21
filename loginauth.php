@@ -1,7 +1,7 @@
 <?php 
 session_start(); //untuk memulai eksekusi session pada server dan kemudian menyimpannya pada browser.
 if(isset($_SESSION['admin'])) { //jika user teridentifikasi sebagai admin (true), maka akan diarahkan ke halaman index.php (dashboard)
-    header('locattion: index.php');
+    header('location: index.php');
 }
 include 'config.php';
 if(isset($_POST['login'])) {
