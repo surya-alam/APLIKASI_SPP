@@ -35,7 +35,7 @@ if(isset($_GET['act'])) {
         $batal = mysqli_query($db ,"UPDATE pembayaran SET nobayar = null,
         tglbayar = null, ket = null, id_admin = null WHERE idspp = '$idspp'");
         if ($batal) {
-            header('location: pembayaran.ph?nisn='.$nisn);
+            header('location: pembayaran.php?nisn='.$nisn);
         }
     }
 }
